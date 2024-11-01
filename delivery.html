@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>delivery</title>
+</head>
+<body>
+     <!-- nav bar starts here -->
+     <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img src="img/logo.png" alt="logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"> Menu</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="#">Takeaway</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+
+    <header>
+        <h1>Delivery Information</h1>
+    </header>
+    <main>
+        <form id="delivery-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" name="postal-code" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <section id="delivery-info">
+            <h2>Your Delivery Details</h2>
+            <div id="info-output"></div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('delivery-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const city = document.getElementById('city').value;
+            const postalCode = document.getElementById('postal-code').value;
+            const phone = document.getElementById('phone').value;
+
+            const output = `
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Address:</strong> ${address}, ${city}, ${postalCode}</p>
+                <p><strong>Phone Number:</strong> ${phone}</p>
+            `;
+            document.getElementById('info-output').innerHTML = output;
+        });
+    </script>
+</body>
+    
+</body>
+</html>

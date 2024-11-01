@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - KFC</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ffffff ;
+    padding: 1rem 2rem;
+    color:white;
+    /* border-radius: 30px; */
+}
+
+.logo img {
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size:large;
+}
+
+.nav-links li a {
+    color: #C8102E;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: cursive;
+}
+
+.nav-links li a:hover {
+    color: #000000; 
+}
+
+/* nav bar ends and oporer sob tuku sob page er jonno */
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+    
+    /* header {
+        background-color: #d50000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    } */
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 140px); /* Adjust height based on header and footer */
+    }
+    
+    .signin-form {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color: #d50000;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    button:hover {
+        background-color: #b00000;
+    }
+    
+    .signup-link {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #d50000;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+</style>
+
+
+</head>
+<body>
+
+ <!-- nav bar starts here -->
+ <nav class="navbar">
+    <div class="logo">
+        <a href="index.html"> <img src="img/logo.png" alt="logo"></a>
+    </div>
+    <ul class="nav-links">
+        <!-- <li><a href="index.html">Menu</a></li> -->
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="#">Takeaway</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+    </ul>
+    </ul>
+</nav>
+<!-- navbar ends here -->
+
+
+
+    <!-- <header>
+        <h1>KFC Sign In</h1>
+    </header> -->
+
+    <main>
+        <form class="signin-form">
+            <h2>Welcome Back!</h2>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign In</button>
+            <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KFC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
